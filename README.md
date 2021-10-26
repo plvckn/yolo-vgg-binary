@@ -36,7 +36,7 @@ Classifier is a modified [VGG-16](https://arxiv.org/abs/1409.1556) model.
 
 - Clone [Darkflow](https://github.com/thtrieu/darkflow) repository. Build required cython extensions for darkflow by running following command inside darkflow repository: ```python setup.py build_ext --inplace``` 
 - Move ```detection/yolov2-voc-1c.cfg``` in this repo to ```darkflow/cfg/``` . Download [weights](https://drive.google.com/drive/folders/1iJ0rHytFkQQ8IJpXNnQtg7TrjUYx4xzx?usp=sharing)  and move both ```yolov2-voc-1c.pb``` and ```yolov2-voc-1c.meta``` to ```darkflow/built_graph/```
-- Download classification [model](https://drive.google.com/drive/folders/1OBaGQBSSpj31xi9V3QRDAzYP49aq7P-A?usp=sharing). Exact directory does not matter, you can specify classifier path in ```vgg-yolo-demo.ipynb``` notebook.  
+- Download classification [model](https://drive.google.com/drive/folders/1OBaGQBSSpj31xi9V3QRDAzYP49aq7P-A?usp=sharing). Exact directory does not matter, you can specify classifier path in ```yolo_vgg_demo.ipynb``` notebook.  
 - To process a video (like the one above) follow code and instructions inside ```yolo_vgg_demo.ipynb``` notebook. This can also work for processing images or even real-time demo with a webcam.
 
 ## Classifier architecture
